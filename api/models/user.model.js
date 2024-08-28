@@ -19,20 +19,20 @@ const userSchema = new mongoose.Schema({
     },
     firstname: {
         type: String,
-        required: true
+        //required: false
     },
     lastname: {
         type: String,
-        required: true
+        //required: false
     },
     number: {
-        type: Number,
-        required: true,
-        unique: true
+        type: String,
+        //required: false,
+        //unique: true
     },
     rating: {
         type: Number,
-        required: true
+        //required: false
     }
 }, {timestamps: true}
 );
