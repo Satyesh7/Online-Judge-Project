@@ -11,7 +11,7 @@ if(!fs.existsSync(dirCodes)){
     fs.mkdirSync(dirCodes);
 }
 
-export const generateFile = (language, code) => {
+export const generateFile = (language = 'cpp', code) => {
     const jobId = uuid(); //b30ae2cf-335e-4c7a-b0bb-7eeed484ffb5
     const fileName = `${jobId}.${language}`; //b30ae2cf-335e-4c7a-b0bb-7eeed484ffb5.cpp
     const filePath = path.join(dirCodes, fileName); //C:\Online Compiler\backend\codes\b30ae2cf-335e-4c7a-b0bb-7eeed484ffb5.cpp
