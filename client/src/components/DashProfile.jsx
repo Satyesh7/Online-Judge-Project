@@ -93,6 +93,7 @@ const handleSubmit = async(e) => {
     dispatch(updateStart()); 
     const res = await fetch(`http://localhost:3000/api/user/update/${currentUser._id}`, {
       method: 'PUT',
+      credentials: 'include',
       headers: {
         'Content-Type':'application/json',
       },

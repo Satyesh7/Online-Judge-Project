@@ -10,7 +10,9 @@ import cookieParser from 'cookie-parser';
 const app = express();
 
 dotenv.config();
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials:true}));
 mongoose.connect(process.env.MONGO).then(()=>{
     console.log("MongoDB is connected");
 }).catch((err)=>{
