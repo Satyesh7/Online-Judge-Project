@@ -21,7 +21,7 @@ const ProblemsTable = () => {
               </th>
   
               <td className="px-6 py-4">
-                <Link className="hover:text-blue-600 cursor-pointer   text-gray-700 dark:text-gray-200 dark:hover:text-blue-600" to={`/problems/${doc.id}`}>
+                <Link className="hover:text-blue-600 cursor-pointer   text-gray-700 dark:text-gray-200 dark:hover:text-blue-600" to={`/problems`}>
                   {doc.title}
                 </Link>
               </td>
