@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import { BsList } from 'react-icons/bs';
+import Timer from './Timer';
 
 const Topbar = ({problemPage}) => {
   return (
@@ -33,6 +34,8 @@ const Topbar = ({problemPage}) => {
         </div>
       </div>
     )}
+    {problemPage && <Timer/>}
+
 
         <div className="flex items-center space-x-4 flex-1 justify-end">
           <div>
