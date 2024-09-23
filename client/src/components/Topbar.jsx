@@ -9,9 +9,9 @@ const Topbar = ({problemPage}) => {
     
     <nav className="relative flex h-[50px] w-full shrink-0 items-center px-5 bg-dark-layer-1 text-dark-gray-7">
       <div className={`flex w-full items-center justify-between ${!problemPage ? "max-w-[1200px] mx-auto" : ""}`}>
-        <Link to="/" className="h-[22px] flex-1">
+        {/* <Link to="/" className="h-[22px] flex-1">
           <img src="https://iximiuz.com/my-choice-of-programming-languages/kdpv-2000-opt.png" alt="Play With Codes!" className="h-[50px] w-[150px]" />
-        </Link>
+        </Link> */}
 
         {problemPage && (
       <div className='flex items-center gap-4 flex-1 justify-center'>

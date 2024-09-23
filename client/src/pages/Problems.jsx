@@ -4,7 +4,7 @@ import Workspace from '../components/Workspace';
 
 const ProblemPage = () => {
   return( <div>
-    <Topbar problemPage/> Have a good coding
+    <Topbar problemPage/> 
     <Workspace/>
     </div>
 )}
