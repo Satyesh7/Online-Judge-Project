@@ -1,0 +1,37 @@
+// Example Type (Optional JSDoc for clarity)
+/**
+ * @typedef {Object} Example
+ * @property {number} id
+ * @property {string} inputText
+ * @property {string} outputText
+ * @property {string} [explanation]
+ * @property {string} [img]
+ */
+
+// Problem Type (Optional JSDoc for clarity)
+/**
+ * @typedef {Object} Problem
+ * @property {string} id
+ * @property {string} title
+ * @property {string} problemStatement
+ * @property {Example[]} examples
+ * @property {string} constraints
+ * @property {number} order
+ * @property {string} starterCode
+ * @property {((fn: any) => boolean) | string} handlerFunction
+ * @property {string} starterFunctionName
+ */
+
+// // DBProblem Type (Optional JSDoc for clarity)
+// /**
+//  * @typedef {Object} DBProblem
+//  * @property {string} id
+//  * @property {string} title
+//  * @property {string} category
+//  * @property {string} difficulty
+//  * @property {number} likes
+//  * @property {number} dislikes
+//  * @property {number} order
+//  * @property {string} [videoId]
+//  * @property {string} [link]
+//  */
