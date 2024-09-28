@@ -82,7 +82,7 @@ Case 3
 nums: [2,7,11,15], target: 9
 </div>
 <p className="text-sm font-medium mt-4 text-white">Output:</p> 
-<div classiame="w-full cursor-text rounded-1g border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2">
+<div className="w-full cursor-text rounded-1g border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2">
 
 [0,1]
 

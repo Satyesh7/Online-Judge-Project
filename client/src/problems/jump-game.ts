@@ -1,6 +1,7 @@
-import assert from "assert";
+//import assert from "assert";
+import { Problem } from "./types/problem";
 
-export const jumpGameHandler = (fn) => {
+export const jumpGameHandler = (fn: any) => {
 	try {
 		const tests = [
 			[2, 3, 1, 1, 4],
@@ -14,7 +15,7 @@ export const jumpGameHandler = (fn) => {
 			assert.equal(result, answers[i]);
 		}
 		return true;
-	} catch (error) {
+	} catch (error: any) {
 		console.log("Error from jumpGameHandler: ", error);
 		throw new Error(error);
 	}
@@ -24,7 +25,7 @@ const starterCodeJumpGameJS = `function canJump(nums) {
   // Write your code here
 };`;
 
-export const jumpGame = {
+export const jumpGame: Problem = {
 	id: "jump-game",
 	title: "3. Jump Game",
 	problemStatement: `<p class='mt-3'>

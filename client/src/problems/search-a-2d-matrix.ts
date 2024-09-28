@@ -1,8 +1,9 @@
-import assert from "assert";
+//import assert from "assert";
+import { Problem } from "./types/problem";
 import example1 from "./images/search-a-2d-1.jpg";
-import example2 from "./images/search-a-2d-2.jpg";
+import example2 from "./images/search-a-2d-2.jpg"
 
-export const search2DMatrixHandler = (fn) => {
+export const search2DMatrixHandler = (fn: any) => {
 	try {
 		const tests = [
 			{
@@ -28,18 +29,17 @@ export const search2DMatrixHandler = (fn) => {
 			assert.deepEqual(result, answers[i]);
 		}
 		return true;
-	} catch (error) {
+	} catch (error: any) {
 		console.log("Error from searchA2DMatrixHandler: ", error);
 		throw new Error(error);
 	}
 };
-
 const starterCodeSearch2DMatrixJS = `// Do not edit function name
 function searchMatrix(matrix, target) {
   // Write your code here
 };`;
 
-export const search2DMatrix = {
+export const search2DMatrix: Problem = {
 	id: "search-a-2d-matrix",
 	title: "5. Search a 2D Matrix",
 	problemStatement: `
