@@ -37,8 +37,6 @@ export default function Home() {
     <ProblemsTable/> 
   </table>
 </div>
-
-    </main>
-    </>
-  )
-}
+</main>
+</>
+)}
