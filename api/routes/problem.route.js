@@ -1,8 +1,9 @@
 import express from 'express';
-import { getProblemById } from '../controllers/problem.controller.js';
+import { verifyToken } from '../utils/verifyUser.js';
+import { add } from '../controllers/problem.controller.js';
 
 const router = express.Router();
 
-router.get('/problems/:pid', getProblemById);
+router.post('/add', verifyToken, add);
 
 export default router;

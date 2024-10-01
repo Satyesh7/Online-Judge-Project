@@ -1,7 +1,6 @@
-import { problems } from '../../client/src/problems/index.ts';
 
 // Controller function to get a problem by its ID (pid)
-export const getProblemById = (req, res) => {
+export const add = (req, res) => {
   const { pid } = req.params;
   const problem = problems[pid];
 
