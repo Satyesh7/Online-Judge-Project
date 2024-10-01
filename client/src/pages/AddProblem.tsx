@@ -31,13 +31,13 @@ return(
   <h1 className='text-center text-3xl my-7 font-semibold'>Add Problem</h1>
 <form className='text-center p-9 flex flex-col max-w-sm gap-4 justify-between'>
 
-<input onChange={handleInputChange} type='text' placeholder='problem id' name='id' />
+<input onChange={handleInputChange} type='text' placeholder='problem id' name='id' required id = 'id' />
 
-<input onChange={handleInputChange } type='text' placeholder='title' name='title' />
+<input onChange={handleInputChange } type='text' placeholder='title' name='title' required id = 'title' />
 
-<input onChange={handleInputChange} type='text' placeholder='difficulty' name='difficulty' />
+<input onChange={handleInputChange} type='text' placeholder='difficulty' name='difficulty' required id = 'difficulty'/>
 
-<input onChange= {handleInputChange} type='text' placeholder='category' name='category' /> <input onChange={handleInputChange} type='text' placeholder='order' name='order' />
+<input onChange= {handleInputChange} type='text' placeholder='category' name='category' required id = 'category' /> <input onChange={handleInputChange} type='text' placeholder='order' name='order' required id = 'order'/>
 
 <input onChange={handleInputChange} type='text' placeholder='videoId?' name='videoId' /> <input onChange={handleInputChange} type='text' placeholder='link?' name='link' />
 
